@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
-    <meta name="description" content="This is my first website"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Short detailed description of site" />
+    <title> | Home</title>
+
+    <!-- FONTS
+        <link rel="preconnect" href="https://fonts.gstatic.com" /> Fast Conn.
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> Link to font
+    -->
+    
+
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">In order to protect a website from web security attacks you should: 
-        <ul>
-            <li>Sanitize the website's code in order to remove unsafe content before presenting them to the user</li>
-            <br>
-            <li>Secure authorization and authentication by ensuring that they are hard to crack. </li>
-            <br>
-            <li>Use well-known third-party application that is tested and trusted</li>
-            <br>
-            <li>Continuous Deployment/Continuous Integration which catches oversights from developers and helps maintain the reliability of the changes coming to a codebase.</li>
-            <br>
-            <li>Use well known and trusted network and hosting platforms</li>
-            <br>
-            <li>Implement automatic user timeout to protect users who have left their credentials hanging in the browser for a long time. </li>
-            <br>
-            <li>Check for potential security threats on websites like <a href="https://pentest-tools.com/website-vulnerability-scanning/website-scanner">this</a> </li>
-        </ul>
-    </p>
+  <body class="container">
+    <header class="header">
+      <input type="checkbox" id="hamburger-menu" />
+      <label for="hamburger-menu" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+      <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="genres.html">Genres</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <!--r-->
+      </nav>
+      <img src="/images/logo.png" alt="square eyes logo" class="logo" href="index.html">
+      <div class="phrase">
+        <p class="para1">Buy & Watch</p>
+        <p class="para2">Movies</p>
+        <p class="para3">Instantly!</p>
+      </div>
+    </header>
+    <main class="main">
+     <section class="section">
+        <h1>movies</h1>
+     </section>
+    </main>
+    <footer class="footer">Copyright &copy;</footer>
   </body>
 </html>
