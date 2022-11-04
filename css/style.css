@@ -43,8 +43,8 @@ a {
 .nav {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     margin-top: 150px;
+    gap: min(2vw) max(5vw);
     margin-left: clamp(5px, 5vw, 100vw);
     margin-right: clamp(5px, 5vw, 100vw);
 }
@@ -61,6 +61,7 @@ a {
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
     max-width: 10em;
+    min-width: 2.3em;
 }
 
 .nav a:hover {
