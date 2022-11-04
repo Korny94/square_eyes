@@ -42,11 +42,11 @@ a {
 
 .nav {
     display: flex;
-    gap: 3em;
-    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 150px;
     margin-left: clamp(5px, 5vw, 100vw);
     margin-right: clamp(5px, 5vw, 100vw);
-    margin-top: 150px;
 }
 
 .nav a {
@@ -60,6 +60,7 @@ a {
     flex: 1;
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
+    max-width: 10em;
 }
 
 .nav a:hover {
@@ -167,7 +168,7 @@ a {
 .h1, .h5 {
     width: 150px;
     height: 33px;
-    background-color: rgb(229, 9, 20);
+    background-color: rgb(229, 9, 20, 0.9);
     border-radius: 5px;
     font-size: 1em;
     margin: 0;
