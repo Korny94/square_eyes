@@ -40,38 +40,6 @@ a {
 
     /* HEADER */
 
-
-
-/*
-.hamburger-icon {
-    font-size: 3.5em;
-    color: rgb(237, 237, 237);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: none;
-    margin-top: 110px;
-    left: -10px;
-    position: fixed;
-}
-
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
-*/
-
-.hamburger-icon {
-    display: none;
-}
-
-#hamburger-menu {
-    display: none;
-}
-
-.header {
-
-}
-
 .nav {
     display: flex;
     gap: 3em;
@@ -88,12 +56,10 @@ a {
     text-decoration: none;
     padding: 10px 5px;
     border-radius: 30px;
-    margin: 15px;
     text-transform: uppercase;
     flex: 1;
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
-    margin: 0;
 }
 
 .nav a:hover {
@@ -141,20 +107,19 @@ a {
     margin: 0;
     font-family: inter-black;
     width: 130px;
+    text-transform:  uppercase;
 } 
 
 .para1 {
-    font-size: 1.2em;
+    font-size: 1.05em;
 }
 
 .para2 {
     font-size: 1.88em;
-    text-transform:  uppercase;
 }
 
 .para3 {
     font-size: 1.26em;
-    text-transform:  uppercase;
 }
 
 
@@ -165,7 +130,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px;
 }
 
 .section {
@@ -189,11 +154,8 @@ a {
 }
 
 .watch-price {
-    top: 0px;
-    height: 33px;
     display: flex;
     gap: 15px;
-    align-items: top;
 }
 
 .h1:hover,
