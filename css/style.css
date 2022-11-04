@@ -1,5 +1,5 @@
    
-   /* FONTS */
+/* --- FONTS ---*/
    
 @font-face {
         font-family: "Inter";
@@ -17,7 +17,7 @@
 }
 
 
-    /* GLOBAL */
+/* --- GLOBAL --- */
 
 .body {
     background-color: rgb(55, 55, 54);
@@ -38,7 +38,9 @@ a {
 }
 
 
-    /* HEADER */
+/* -- INDEX.HTML -- */
+
+        /* -- HEADER -- */
 
 .nav {
     display: flex;
@@ -125,7 +127,7 @@ a {
 }
 
 
-    /* MAIN */
+        /* -- MAIN -- */
 
 .main {
     display: flex;
@@ -227,7 +229,7 @@ a {
 }
 
 
-    /* FOOTER */
+        /* -- FOOTER -- */
 
 .footer {
     color: rgb(237, 237, 237);
@@ -240,3 +242,33 @@ a {
     margin-top: auto;
 }
 
+
+
+/* --- GENRES.HTML --- */
+
+        /* -- MAIN -- */
+
+.main-genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.section-genres:first-child {
+    color: red;
+}
+
+.section-genres {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.h1-genres {
+    font-size: 3em;
+    text-transform: none;
+    gap: 10px;
+}
+        
