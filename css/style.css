@@ -240,6 +240,7 @@ a {
     align-items: center;
     font-family: inter;
     margin-top: auto;
+    padding-top: 30px;
 }
 
 
@@ -274,7 +275,7 @@ a {
     height: 3.5em;
     color: rgb(237, 237, 237);
     font-size: clamp(.1em, 1em, 1.5em);
-    border-radius: 30px;
+    border-radius: 15px;
     text-transform: uppercase;
     flex: 1;
     box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
@@ -319,7 +320,7 @@ p {
     color: rgb(237, 237, 237);
     font-size: clamp(.1em, 1.2em, 1.5em);
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 15px;
     flex: 1;
     box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
     padding: 0em 1em;
@@ -351,7 +352,7 @@ p {
     height: 3.5em;
     color: rgb(237, 237, 237);
     font-size: .8em;
-    border-radius: 30px;
+    border-radius: 15px;
     flex: 1;
     box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
     padding: 0em 2em;
