@@ -3,7 +3,7 @@
    
 @font-face {
         font-family: "Inter";
-        src: url("/assets/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+        src: url("/assets/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
 }
 
 @font-face {
@@ -19,11 +19,13 @@
 
 /* --- GLOBAL --- */
 
+        /* -- BODY -- */
+
 .body {
     background-color: rgb(55, 55, 54);
     margin: 0 auto;
     padding: 0;
-    font-family: inter-extrabold;
+    font-family: inter-extrabold, Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-shadow: rgb(0, 0, 0, 0.2) 0px 1.5px 1px;
     display: flex;
@@ -36,9 +38,7 @@ a {
     color: rgb(237, 237, 237);
     text-decoration: none;
 }
-
-
-/* --- INDEX.HTML --- */
+        
 
         /* -- HEADER -- */
 
@@ -127,6 +127,23 @@ a {
 }
 
 
+        /* -- FOOTER -- */
+.footer {
+    color: rgb(237, 237, 237);
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+
+
+/* --- INDEX.HTML --- */
+
         /* -- MAIN -- */
 
 .main {
@@ -134,7 +151,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px 10px;
 }
 
 .section {
@@ -231,17 +248,7 @@ a {
 
         /* -- FOOTER -- */
 
-.footer {
-    color: rgb(237, 237, 237);
-    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: inter;
-    margin-top: auto;
-    padding-top: 30px;
-}
+
 
 
 
@@ -274,7 +281,7 @@ a {
     background-color: rgb(229, 9, 20, 0.8);
     height: 3.5em;
     color: rgb(237, 237, 237);
-    font-size: clamp(.1em, 1em, 1.5em);
+    font-size: clamp(.1em, .8em, 1.5em);
     border-radius: 15px;
     text-transform: uppercase;
     flex: 1;
@@ -300,10 +307,15 @@ a {
 .main-about {
     max-width: 33em;
     margin: auto;
-    margin-bottom: 30px;
 }
 
-p {
+.h1-about {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.p {
     margin: 0em, 2em, 1em;
     font-size: 1.3em;
 }
@@ -330,6 +342,11 @@ p {
     justify-content: center;
     max-width: 8em;
     margin: auto;
+}
+
+.movies-about:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 10px;
 }
 
 
@@ -365,4 +382,195 @@ p {
     transform: scale(1.05);
     box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 10px;
 }
+
+
+/* --- MOVIE-READ --- */ 
+
+        /* -- MAIN -- */
+
+.main-read {
+    margin: 0 auto;
+}
+
+.section-read {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.h2-read {
+    line-height: 5px;
+}
+
+.h3-read {
+    line-height: 7px;
+}
+
+.facts {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facts-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.cover-read {
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 15px;
+}
+
+.cover-read:hover {
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 13px;
+    transform: scale(1.01);
+}
+
+.description-read {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-read {
+    width: 300px;
+    line-height: 1.8em;
+}
+
+.movie-buy {
+    background-color: rgb(229, 9, 20, 0.8);
+    height: 3em;
+    color: rgb(237, 237, 237);
+    font-size: clamp(.1em, 1.2em, 1.5em);
+    text-decoration: none;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
+    padding: 0em 1em;
+    margin: clamp(0.1em, 1em, 2.4em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+}
+
+.movie-buy:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 10px;
+}
+
+
+
+/* --- MOVIE-CONGRATULATIONS ---*/
+
+        /* -- MAIN -- */
+
+.container-cong {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1-cong {
+    margin: 15px 0px 0px;
+    font-size: 2em;
+}
+
+.cover-cong {
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 15px;
+}
+
+.play-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-movie:hover {
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 13px;
+    transform: scale(1.01);
+}
+
+.play-button {
+    position: absolute;
+    font-size: 4em;
+}
+
+.p-cong {
+    width: 320px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.icons-cong {
+    display: flex;
+    justify-content: center;
+}
+
+.icons-cong * {
+    font-size: 1.5em;
+    padding: 0em .4em;
+}
+
+.icons-cong *:hover {
+    text-shadow: rgba(255, 255, 255, 0.4) 0px 0px 13px;
+    transform: scale(1.01);
+}
+
+
+
+/* --- MOVIE-BUY --- */
+
+        /* -- MAIN -- */
+
+.main-buy {
+    margin: 0 auto;
+}
+
+.container-buy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.cover-buy {
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 15px;
+}
+
+.h1-buy {
+    font-size: 1.7em;
+}
+
+.h2-buy {
+    font-family: inter;
+    font-size: 1.4em;
+}
+
+.price-buy-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 
