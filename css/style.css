@@ -305,19 +305,25 @@ a {
         /* -- MAIN -- */
 
 .main-about {
-    max-width: 33em;
-    margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .h1-about {
-    font-size: 2.5em;
+    font-size: 2.1em;
     text-align: center;
-    padding-bottom: 20px;
 }
 
-.p {
-    margin: 0em, 2em, 1em;
+.container-p-about {
+    max-width: 33em;
+    margin: 0 auto;
+    padding: 0em 2em;
+}
+
+.p-about {
     font-size: 1.3em;
+    text-align: left;
 }
 
 .h2-about {
@@ -355,27 +361,35 @@ a {
         /* -- MAIN -- */
 
 .main-contact {
-    margin: 0px 20px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-contact {
+    font-size: 2.1em;
+    text-align: center;
 }
 
 .container-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .section-contact {
     background-color: rgb(229, 9, 20, 0.8);
-    height: 3.5em;
     color: rgb(237, 237, 237);
-    font-size: .8em;
+    font-size: 0.8em;
     border-radius: 15px;
-    flex: 1;
     box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
-    padding: 0em 2em;
-    margin: clamp(0.1em, 1em, 2.4em);
-    
-    width: clamp(20vw, 25em, 70vw);
+    padding: 0px 1em;
+    margin: clamp(0.1em, .7em, 1em);
+    width: clamp(1vw, 24.5em, 100%);
 }
 
 .section-contact:hover {
