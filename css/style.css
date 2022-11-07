@@ -267,7 +267,8 @@ a {
     font-size: 2.5em;
     text-align: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    margin: 0;
 }
 
 .container-genres {
@@ -298,7 +299,7 @@ a {
     transform: scale(1.05);
     box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 10px;
 }
-        
+
 
 /* --- ABOUT.HTML --- */
 
@@ -410,6 +411,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
@@ -456,6 +458,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5em;
+}
+
+.description-para {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .p-read {
@@ -490,9 +499,21 @@ a {
 
 /* --- MOVIE-CONGRATULATIONS ---*/
 
+        /* -- HEADER -- */
+
+#header-cong {
+    position: relative;
+    top: -100px;
+}
+
         /* -- MAIN -- */
+.main-cong {
+    position: relative;
+    top: -100px;
+}
 
 .container-cong {
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -501,7 +522,11 @@ a {
 
 .h1-cong {
     margin: 15px 0px 0px;
-    font-size: 2em;
+    font-size: 2.3em;
+}
+
+.h2-cong {
+    font-size: 1.1em;
 }
 
 .cover-cong {
@@ -527,7 +552,7 @@ a {
 }
 
 .p-cong {
-    width: 320px;
+    width: 260px;
     line-height: 30px;
     text-align: center;
 }
@@ -548,20 +573,41 @@ a {
 }
 
 
-
 /* --- MOVIE-BUY --- */
+
+        /* -- HEADER -- */
+
+#header-buy {
+    position: relative;
+    top: -100px;
+}
 
         /* -- MAIN -- */
 
+
 .main-buy {
+    position: relative;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+}
+
+.h1-buy {
+    font-size: 2.5em;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 10px;
 }
 
 .container-buy {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
     justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .cover-buy {
@@ -572,6 +618,8 @@ a {
 
 .h1-buy {
     font-size: 1.7em;
+    text-align: left;
+    width: auto;
 }
 
 .h2-buy {
@@ -583,8 +631,208 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
+.fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+#card-name,
+#card-num {
+    width: 192px;
+    height: 65px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    padding: 0px 10px;
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+    padding-right: 140px;
+}
+
+#q-mark-cardname {
+    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
+    color: rgb(55, 55, 54);
+    right: 20px;
+    top: 23px;
+    font-size: 1.5em;
+}
+
+#q-mark-cardname:hover,
+#q-mark-cardnum:hover,
+#q-mark-cardmmyy:hover,
+#q-mark-cardcvc:hover {
+    transform: scale(1.07)
+}
+
+#q-mark-cardname:hover ~ .q-mark-name,
+#q-mark-cardnum:hover ~ .q-mark-num, 
+#q-mark-cardmmyy:hover ~ .q-mark-mmyy,
+#q-mark-cardcvc:hover ~ .q-mark-cvc {
+    display: block;
+}
+
+.q-mark-name {
+    position: absolute;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    border: 2px solid rgb(55, 55, 54);
+    border-radius: 5px;
+    color: rgb(55, 55, 54);
+    width: 100px;
+    grid-row: 1;
+    grid-column: 1;
+    right: 0;
+    top: -120px;
+    padding: 10px;
+    display: none;
+}
+
+#q-mark-cardnum {
+    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
+    color: rgb(55, 55, 54);
+    right: 20px;
+    top: 23px;
+    font-size: 1.5em;
+}
+
+.q-mark-num {
+    position: absolute;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    border: 2px solid rgb(55, 55, 54);
+    border-radius: 5px;
+    color: rgb(55, 55, 54);
+    width: 120px;
+    grid-row: 1;
+    grid-column: 1;
+    right: 0;
+    top: -80px;
+    padding: 10px;
+    display: none;
+}
+
+
+.visa-num {
+    display: grid;
+    position: relative;
+}
+
+.visa {
+    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
+    overflow: hidden;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    right: 60px;
+    top: 20px;
+}
+
+#visa {
+    background-color: blue;
+    font-size: 4em;
+    overflow: hidden;
+}
+
+.textbox-small {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.q-mark-mmyy {
+    position: absolute;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    border: 2px solid rgb(55, 55, 54);
+    border-radius: 5px;
+    color: rgb(55, 55, 54);
+    width: 100px;
+    grid-row: 1;
+    grid-column: 1;
+    right: 0;
+    top: -80px;
+    padding: 10px;
+    display: none;
+}
+
+#q-mark-cardmmyy,
+#q-mark-cardcvc {
+    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
+    color: rgb(55, 55, 54);
+    right: 15px;
+    top: 23px;
+    font-size: 1.5em;
+}
+
+.q-mark-cvc {
+    position: absolute;
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    border: 2px solid rgb(55, 55, 54);
+    border-radius: 5px;
+    color: rgb(55, 55, 54);
+    width: 150px;
+    grid-row: 1;
+    grid-column: 1;
+    right: 0;
+    top: -100px;
+    padding: 10px;
+    display: none;
+}
+
+#card-mmyy,
+#card-cvc {
+    width: 104px;
+    height: 65px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    padding: 0px 10px;
+    padding-right: 40px;
+}
+
+#card-name:hover,
+#card-num:hover,
+#card-mmyy:hover,
+#card-cvc:hover {
+    border: 2px solid rgb(237, 237, 237);
+}
+
+.purchase {
+    background-color: rgb(229, 9, 20, 0.8);
+    height: 50px;
+    color: rgb(237, 237, 237);
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.2) 0px 4px 4px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    margin: 0px;
+}
+
+.purchase:hover {
+    transform: scale(1.025);
+}
 
 
 

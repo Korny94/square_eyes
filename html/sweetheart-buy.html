@@ -9,26 +9,76 @@
     <script src="https://kit.fontawesome.com/d36ab058e7.js" crossorigin="anonymous"></script>
   </head>
   <body class="body">
-    <header class="header">
-      <nav class="nav">
-        <a href="/index.html"><i class="fa-solid fa-house"></i></a>
-        <a href="/html/genres.html"><i class="fa-solid fa-masks-theater"></i></a>
-        <a href="/html/contact.html"><i class="fa-solid fa-envelope"></i></a>
-        <a href="/html/about.html"><i class="fa-solid fa-circle-info"></i></a>
-      </nav>
-      <a href="/index.html">
-        <img src="/images/logo.png" alt="square eyes logo" class="logo">
-      </a>
-      <a href="/index.html" class="phrase">
-          <p class="para1">Buy & Watch</p>
-          <p class="para2">Movies</p>
-          <p class="para3">Instantly!</p>
-      </a>
+    <header class="header" id="header-buy">
+        <nav class="nav">
+          <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+          <a href="/html/genres.html"><i class="fa-solid fa-masks-theater"></i></a>
+          <a href="/html/contact.html"><i class="fa-solid fa-envelope"></i></a>
+          <a href="/html/about.html"><i class="fa-solid fa-circle-info"></i></a>
+        </nav>
     </header>
-    <main class="main">
-      
+    <main class="main-buy">
+      <h1 class="h1-buy">
+        Checkout
+      </h1>
+      <section class="container-buy">
+          <img src="/images/hobbs.jpeg" alt="Movie Cover, Fast and furious presents Hobbs and Shaw" class="cover-buy">
+        <section class="container-price-buy">
+          <section class="price-buy-1">
+            <h1 class="h1-buy">
+              Hobbs & Shaw
+            </h1>
+            <h1 class="h2-buy">
+              $4.99
+            </h1>
+          </section>
+          <p class="separation-line">___________________________________</p>
+          <section class="price-buy-2">
+            <h1 class="h1-buy">
+              Total
+            </h1>
+            <h1 class="h2-buy">
+              $4.99
+            </h1>
+          </section>
+        </section>
+        <section class="form-buy">
+          <fieldset class="fieldset">
+            <section class="visa-num">
+              <input type="text" id="card-name" name="card-name" placeholder="Name on card">
+              <i class="fa-regular fa-circle-question" id="q-mark-cardname"></i>
+              <p class="q-mark-name"><i class="fa-solid fa-circle-info"></i> Input the cardholders full name as it appears on the card.</p>
+            </section>
+            <section class="visa-num">
+              <input type="text" id="card-num" name="card-num" placeholder="Card number">
+              <i class="fa-regular fa-circle-question" id="q-mark-cardnum"></i>
+              <p class="q-mark-num"><i class="fa-solid fa-circle-info"></i> Input the card number (16 digits).</p>
+              <section class="visa">
+                <i class="fa-brands fa-cc-visa" id="visa"></i>
+              </section>
+            </section>
+            <section class="textbox-small">
+              <section class="visa-num">
+                <input type="text" id="card-mmyy" name="card-mmyy" placeholder="MM / YY">
+                <i class="fa-regular fa-circle-question" id="q-mark-cardmmyy"></i>
+                <p class="q-mark-mmyy"><i class="fa-solid fa-circle-info"></i> Input the cards expiry date.</p>
+              </section>
+              <section class="visa-num">
+                <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC">
+                <i class="fa-regular fa-circle-question" id="q-mark-cardcvc"></i>
+                <p class="q-mark-cvc"><i class="fa-solid fa-circle-info"></i> Input the cards security code located on the back (3 digits)</p>
+              </section>
+            </section>
+            <a href="/html/hobbs-cong.html">
+              <section class="purchase">
+                <h3>Purchase</h3>
+              </section>
+            </a>
+          </fieldset>
+        </section>
+      </section>
     </main>
-    <footer class="footer"> 
+    <footer class="footer" id="footer-buy"> 
       &copy; Square Eyes - 2022
     </footer>
   </body>
