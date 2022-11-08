@@ -674,15 +674,15 @@ hr {
 
 #card-name,
 #card-num {
-    width: 192px;
-    height: 65px;
+    width: 280px;
+    height: 55px;
     border-radius: 15px;
     font-size: 1.3em;
     padding: 0px 10px;
     position: relative;
     grid-row: 1;
     grid-column: 1;
-    padding-right: 140px;
+    padding-right: 45px;
 }
 
 #q-mark-cardname {
@@ -691,7 +691,7 @@ hr {
     grid-column: 1;
     color: rgb(55, 55, 54);
     right: 20px;
-    top: 23px;
+    top: 18px;
     font-size: 1.5em;
 }
 
@@ -716,7 +716,7 @@ hr {
     border: 2px solid rgb(55, 55, 54);
     border-radius: 5px;
     color: rgb(55, 55, 54);
-    width: 100px;
+    width: 150px;
     grid-row: 1;
     grid-column: 1;
     right: 0;
@@ -731,7 +731,7 @@ hr {
     grid-column: 1;
     color: rgb(55, 55, 54);
     right: 20px;
-    top: 23px;
+    top: 18px;
     font-size: 1.5em;
 }
 
@@ -755,26 +755,6 @@ hr {
 .visa-num {
     display: grid;
     position: relative;
-}
-
-.visa {
-    position: absolute;
-    grid-row: 1;
-    grid-column: 1;
-    overflow: hidden;
-    height: 30px;
-    width: 70px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    right: 60px;
-    top: 20px;
-}
-
-#visa {
-    background-color: blue;
-    font-size: 4em;
-    overflow: hidden;
 }
 
 .textbox-small {
@@ -806,7 +786,7 @@ hr {
     grid-column: 1;
     color: rgb(55, 55, 54);
     right: 15px;
-    top: 23px;
+    top: 18px;
     font-size: 1.5em;
 }
 
@@ -828,8 +808,8 @@ hr {
 
 #card-mmyy,
 #card-cvc {
-    width: 104px;
-    height: 65px;
+    width: 100px;
+    height: 55px;
     border-radius: 15px;
     font-size: 1.3em;
     padding: 0px 10px;
@@ -841,6 +821,22 @@ hr {
 #card-mmyy:hover,
 #card-cvc:hover {
     border: 2px solid rgb(237, 237, 237);
+}
+
+.pay-method {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.pay-logo {
+    width: 40px;
+}
+
+.pay-logo-invert {
+    width: 40px;
+    filter: invert(100%);
+    filter: brightness(100);
 }
 
 .purchase {
@@ -855,8 +851,9 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 340px;
+    width: 335px;
     margin: 0px;
+    margin-top: 5px;
 }
 
 .purchase:hover {
