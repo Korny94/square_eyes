@@ -58,7 +58,6 @@ a {
     text-decoration: none;
     padding: 10px 5px;
     border-radius: 30px;
-    text-transform: uppercase;
     flex: 1;
     text-align: center;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 10px;
@@ -224,11 +223,6 @@ a {
 
 .h3:hover {
     transform: scale(1.1);
-}
-
-.separation-line {
-    color: black;
-    margin: 0;
 }
 
 .cover-separation {
@@ -427,6 +421,12 @@ hr {
     gap: 2em;
 }
 
+.h1-genres-once-upon {
+    margin: 0px 10px 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .h2-read {
     line-height: 5px;
 }
@@ -437,7 +437,7 @@ hr {
 
 .facts {
     width: 300px;
-    height: 450px;
+    height: 340px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -861,4 +861,312 @@ hr {
 }
 
 
+
+/* --- MEDIA QUERIES --- */
+
+        /* -- <350px -- */
+
+@media (max-width: 349px) {
+
+    /* --- GLOBAL --- */        
+        
+        /* -- HEADER -- */
+        
+.nav {
+    flex-wrap: wrap;
+    gap: min(4vw) max(5vw);
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.nav a {
+    font-size: .8em;
+    width: 30px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.phrase {
+    width: 100px;
+    top: 20px;
+    margin-right: 10px;
+}
+
+.h1-phrase {
+    font-size: .8em;
+    width: 100px;
+}
+
+.h1-span-movies {
+    font-size: 1.8em;
+    width: 100px;
+}
+
+.h1-span-instantly {
+font-size: 1.22em;
+}
+
+
+/* --- INDEX.HTML --- */
+
+        /* -- MAIN -- */
+
+.section {
+    width: 200px;
+    height: 550px;
+}
+
+.cover {
+    width: 200px;
+}
+
+.watch-price {
+    width: 180px;
+}
+
+.h4 {
+    width: 180px;
+}
+
+.cover-separation {
+    height: 600px;
+    width: 200px;
+}
+
+
+
+/* --- GENRES.HTML (+ EACH GENRE.HTML) --- */
+
+        /* -- MAIN -- */
+
+.main-genres {
+    width: 100%;
+    height: 380px;
+}
+
+.h1-genres {
+    padding-bottom: 0px;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+.container-genres {
+    height: 200px;
+    padding: 0;
+}
+
+.cover-separation-line {
+    display: none;
+}
+
+
+/* --- ABOUT.HTML --- */
+
+        /* -- MAIN -- */
+
+.h1-about {
+    font-size: 1.3em;
+}
+
+.movies-about {
+    font-size: 1.5em;
+}
+
+.container-p-about {
+    font-size: .8em;
+}
+
+.h2-about {
+    padding-top: 0em;
+}
+
+
+/* --- CONTACT.HTML --- */
+
+        /* -- MAIN -- */
+
+.h1-contact {
+    font-size: 1.3em;
+}
+
+.section-contact {
+    font-size: 1em;
+    width: 180px;
+}
+
+
+/* --- MOVIE-READ --- */ 
+
+        /* -- MAIN -- */
+
+.main-read {
+    margin-top: 20px;
+}
+
+.section-read {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.h1-genres-once-upon {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.h2-read {
+    line-height: 5px;
+    font-size: 1.25em;
+}
+
+.h3-read {
+    line-height: 10px;
+    font-size: 1em;
+}
+
+.facts {
+    height: 350px;
+}
+
+.facts-right {
+    font-size: 0.9em;
+}
+
+#h3-once-upon {
+    font-size: 1em;
+}
+
+.h3-once-upon {
+    gap: .5em;
+}
+
+.cover-read {
+    height: 350px;
+}
+
+.p-read {
+    width: 250px;
+}
+
+.movie-buy {
+    padding: .3em;
+}
+
+
+/* --- MOVIE-CONGRATULATIONS ---*/
+
+        /* -- HEADER -- */
+
+#header-cong {
+    top: -90px;
+    margin-bottom: 10px;
+}
+
+        /* -- MAIN -- */
+
+.container-cong {
+    height: 550px;
+}
+
+.h1-cong {
+    font-size: 1.7em;
+}
+
+.h2-cong {
+    font-size: 1em;
+}
+
+.cover-cong {
+    height: 350px;
+}
+
+.play-button {
+    font-size: 3em;
+}
+
+.p-cong {
+    width: 240px;
+    line-height: 25px;
+}
+
+
+/* --- MOVIE-BUY --- */
+
+        /* -- HEADER -- */
+
+#header-buy {
+    top: -90px;
+    margin-bottom: 30px;
+}
+
+        /* -- MAIN -- */
+
+
+.main-buy {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+}
+
+.container-buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 40px;
+}
+
+.price-buy-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.fieldset {
+    height: 400px;
+}
+
+#card-name,
+#card-num {
+    width: 200px;
+}
+
+.textbox-small {
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#card-mmyy,
+#card-cvc {
+    width: 205px;
+}
+
+.pay-method {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.pay-logo {
+    transform: scale(.7);
+}
+
+.pay-logo-invert {
+transform: scale(.7);
+}
+
+.purchase {
+    width: 240px;
+}
+
+}
 
