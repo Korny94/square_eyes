@@ -886,7 +886,7 @@ hr {
 }
 
 .nav a {
-    font-size: .8em;
+    font-size: 1em;
     width: 30px;
 }
 
@@ -940,7 +940,6 @@ font-size: 1.22em;
     height: 600px;
     width: 200px;
 }
-
 
 
 /* --- GENRES.HTML (+ EACH GENRE.HTML) --- */
