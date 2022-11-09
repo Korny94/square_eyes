@@ -251,6 +251,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0px 50px;
 }
 
 .h1-genres {
@@ -949,6 +950,7 @@ font-size: 1.22em;
 .main-genres {
     width: 100%;
     height: 380px;
+    margin: 0;
 }
 
 .h1-genres {
