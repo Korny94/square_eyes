@@ -65,6 +65,11 @@ a {
     min-width: 2.3em;
 }
 
+#hamburger-menu,
+#three-bars {
+    display: none;
+}
+
 .nav a:hover {
     box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 10px;
     transform: scale(1.1);
@@ -83,7 +88,6 @@ a {
     position: absolute;
     top: 25px;
 }
-
 
 .phrase {
     border-radius: 20px;
@@ -871,7 +875,7 @@ hr {
 
 /* --- MEDIA QUERIES --- */
 
-        /* -- <350px -- */
+        /* -- 250px - 350px -- */
 
 @media (max-width: 349px) {
 
@@ -899,6 +903,340 @@ hr {
     width: 100px;
     top: 20px;
     margin-right: 10px;
+}
+
+.h1-phrase {
+    font-size: .8em;
+    width: 100px;
+}
+
+.h1-span-movies {
+    font-size: 1.8em;
+    width: 100px;
+}
+
+.h1-span-instantly {
+font-size: 1.22em;
+}
+
+
+/* --- INDEX.HTML --- */
+
+        /* -- MAIN -- */
+
+.section {
+    width: 200px;
+    height: 550px;
+}
+
+.cover {
+    width: 200px;
+}
+
+.watch-price {
+    width: 180px;
+}
+
+.h4 {
+    width: 180px;
+}
+
+.cover-separation {
+    height: 600px;
+    width: 200px;
+}
+
+
+/* --- GENRES.HTML (+ EACH GENRE.HTML) --- */
+
+        /* -- MAIN -- */
+
+.main-genres {
+    width: 100%;
+    height: 380px;
+    margin: 0;
+}
+
+.h1-genres {
+    padding-bottom: 0px;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+.container-genres {
+    height: 200px;
+    padding: 0;
+}
+
+.cover-separation-line {
+    display: none;
+}
+
+
+/* --- ABOUT.HTML --- */
+
+        /* -- MAIN -- */
+
+.h1-about {
+    font-size: 1.3em;
+}
+
+.movies-about {
+    font-size: 1.5em;
+}
+
+.container-p-about {
+    font-size: .8em;
+}
+
+.h2-about {
+    padding-top: 0em;
+}
+
+
+/* --- CONTACT.HTML --- */
+
+        /* -- MAIN -- */
+
+.h1-contact {
+    font-size: 1.3em;
+}
+
+.section-contact {
+    font-size: 1em;
+    width: 180px;
+}
+
+
+/* --- MOVIE-READ --- */ 
+
+        /* -- MAIN -- */
+
+.main-read {
+    margin-top: 20px;
+}
+
+.section-read {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.h1-genres-once-upon {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.h2-read {
+    line-height: 5px;
+    font-size: 1.25em;
+}
+
+.h3-read {
+    line-height: 10px;
+    font-size: 1em;
+}
+
+.facts {
+    height: 350px;
+}
+
+.facts-right {
+    font-size: 0.9em;
+}
+
+#h3-once-upon {
+    font-size: 1em;
+}
+
+.h3-once-upon {
+    gap: .5em;
+}
+
+.cover-read {
+    height: 350px;
+}
+
+.p-read {
+    width: 250px;
+}
+
+.movie-buy {
+    padding: .3em;
+}
+
+
+/* --- MOVIE-CONGRATULATIONS ---*/
+
+        /* -- HEADER -- */
+
+#header-cong {
+    top: -90px;
+    margin-bottom: 10px;
+}
+
+        /* -- MAIN -- */
+
+.container-cong {
+    height: 550px;
+}
+
+.h1-cong {
+    font-size: 1.7em;
+}
+
+.h2-cong {
+    font-size: 1em;
+}
+
+.cover-cong {
+    height: 350px;
+}
+
+.play-button {
+    font-size: 3em;
+}
+
+.p-cong {
+    width: 240px;
+    line-height: 25px;
+}
+
+
+/* --- MOVIE-BUY --- */
+
+        /* -- HEADER -- */
+
+#header-buy {
+    top: -90px;
+    margin-bottom: 30px;
+}
+
+        /* -- MAIN -- */
+
+
+.main-buy {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+}
+
+.container-buy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 40px;
+}
+
+.price-buy-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.fieldset {
+    height: 400px;
+}
+
+#card-name,
+#card-num {
+    width: 200px;
+}
+
+.textbox-small {
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#card-mmyy,
+#card-cvc {
+    width: 205px;
+}
+
+.pay-method {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.pay-logo {
+    transform: scale(.7);
+}
+
+.pay-logo-invert {
+transform: scale(.7);
+}
+
+.purchase {
+    width: 240px;
+}
+
+}
+
+
+        /* -- <250px -- */
+
+@media (max-width: 250px) {
+
+    /* --- GLOBAL --- */        
+        
+        /* -- HEADER -- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+        
+.nav {
+    display: none;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(55, 55, 54);
+    border: 1px solid rgb(237, 237, 237);
+    padding: 20px;
+    border-radius: 10px;
+    gap: min(7vw) max(10vw);
+    top: 100px;
+}
+
+#three-bars {
+    display: flex;
+    font-size: 3em;
+}
+
+#hamburger-menu:checked ~ .nav {
+    display: flex;
+}
+
+.nav a {
+    font-size: 3em;
+    width: 30px;
+}
+
+.logo {
+    width: 130px;
+    position: relative;
+    margin: 5px;
+    top: 10px;
+}
+
+.phrase {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: 10px;
 }
 
 .h1-phrase {
