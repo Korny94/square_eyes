@@ -261,6 +261,12 @@ a {
     margin: 0;
 }
 
+.h1-genre {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
 .container-genres {
     padding: 0em 4em;
     margin: 1.1em auto;
