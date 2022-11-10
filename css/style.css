@@ -920,6 +920,13 @@ font-size: 1.22em;
 }
 
 
+        /* -- FOOTER -- */
+
+.footer {
+    font-size: .8em;
+}
+
+
 /* --- INDEX.HTML --- */
 
         /* -- MAIN -- */
@@ -1178,7 +1185,6 @@ transform: scale(.7);
 .purchase {
     width: 240px;
 }
-
 }
 
 
@@ -1190,11 +1196,17 @@ transform: scale(.7);
         
         /* -- HEADER -- */
 
+.main {
+    padding: 10px 0px 0px 0px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 250px;
+    margin: auto;
+    width: 130px;
 }
         
 .nav {
@@ -1208,16 +1220,22 @@ transform: scale(.7);
     padding: 20px;
     border-radius: 10px;
     gap: min(7vw) max(10vw);
-    top: 100px;
+    top: 30px;
 }
 
 #three-bars {
     display: flex;
-    font-size: 3em;
+    position: relative;
+    font-size: 4em;
+    top: 25px;
 }
 
 #hamburger-menu:checked ~ .nav {
     display: flex;
+}
+
+#hamburger-menu:checked ~ .phrase {
+    opacity: 0;
 }
 
 .nav a {
@@ -1228,15 +1246,14 @@ transform: scale(.7);
 .logo {
     width: 130px;
     position: relative;
-    margin: 5px;
     top: 10px;
 }
 
 .phrase {
     position: relative;
     width: 100px;
-    height: 50px;
-    top: 10px;
+    top: 13px;
+    margin-right: 0;
 }
 
 .h1-phrase {
@@ -1259,25 +1276,37 @@ font-size: 1.22em;
         /* -- MAIN -- */
 
 .section {
-    width: 200px;
+    width: 140px;
     height: 550px;
 }
 
 .cover {
-    width: 200px;
+    width: 140px;
 }
 
 .watch-price {
-    width: 180px;
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    align-items: center;
+    padding: 0;
+}
+
+.h1,
+.h3,
+.h5 {
+    width: 120px;
 }
 
 .h4 {
-    width: 180px;
+    width: 130px;
 }
 
 .cover-separation {
     height: 600px;
-    width: 200px;
+    width: 140px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 
@@ -1287,7 +1316,7 @@ font-size: 1.22em;
 
 .main-genres {
     width: 100%;
-    height: 380px;
+    height: 300px;
     margin: 0;
 }
 
@@ -1300,6 +1329,12 @@ font-size: 1.22em;
 .container-genres {
     height: 200px;
     padding: 0;
+    margin: 0;
+}
+
+.section-genres {
+    font-size: 1.5em;
+    padding: 5px 10px;
 }
 
 .cover-separation-line {
