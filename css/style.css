@@ -37,6 +37,11 @@
 a {
     color: rgb(237, 237, 237);
     text-decoration: none;
+    transition-duration: 350ms;
+}
+
+img {
+    transition-duration: 350ms;
 }
         
 
