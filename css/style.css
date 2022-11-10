@@ -875,6 +875,7 @@ hr {
 
 /* --- MEDIA QUERIES --- */
 
+
         /* -- 250px - 350px -- */
 
 @media (max-width: 349px) {
@@ -1187,7 +1188,6 @@ transform: scale(.7);
 }
 }
 
-
         /* -- <250px -- */
 
 @media (max-width: 250px) {
@@ -1394,7 +1394,7 @@ font-size: 1.22em;
 
 .section-read {
     width: 140px;
-    height: 760px;
+    height: 780px;
     margin: 10px auto;
     gap: 0px;
 }
