@@ -1204,7 +1204,7 @@ transform: scale(.7);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: 200px;
     margin: auto;
     width: 130px;
 }
@@ -1220,22 +1220,20 @@ transform: scale(.7);
     padding: 20px;
     border-radius: 10px;
     gap: min(7vw) max(10vw);
-    top: 30px;
+    top: 80px;
 }
 
 #three-bars {
     display: flex;
     position: relative;
     font-size: 4em;
-    top: 25px;
+    top: 100px;
+    margin: auto;
 }
 
 #hamburger-menu:checked ~ .nav {
     display: flex;
-}
-
-#hamburger-menu:checked ~ .phrase {
-    opacity: 0;
+    z-index: 3;
 }
 
 .nav a {
@@ -1244,16 +1242,18 @@ transform: scale(.7);
 }
 
 .logo {
-    width: 130px;
+    width: 50px;
     position: relative;
-    top: 10px;
+    top: 100px;
 }
 
 .phrase {
-    position: relative;
+    position: absolute;
     width: 100px;
-    top: 13px;
+    top: 15px;
     margin-right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .h1-phrase {
@@ -1347,19 +1347,23 @@ font-size: 1.22em;
         /* -- MAIN -- */
 
 .h1-about {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .movies-about {
-    font-size: 1.5em;
+    font-size: 1em;
+    width: 100px;
 }
 
 .container-p-about {
     font-size: .8em;
+    width: 140px;
+    padding: 0;
 }
 
 .h2-about {
-    padding-top: 0em;
+    padding: 0em 0em 10px 0em;
+    font-size: 1em;
 }
 
 
@@ -1372,8 +1376,11 @@ font-size: 1.22em;
 }
 
 .section-contact {
-    font-size: 1em;
-    width: 180px;
+    font-size: .8em;
+    width: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
 }
 
 
@@ -1386,52 +1393,65 @@ font-size: 1.22em;
 }
 
 .section-read {
-    width: 240px;
-    margin: 0 auto;
+    width: 140px;
+    height: 760px;
+    margin: 10px auto;
+    gap: 0px;
 }
 
 .h1-genres-once-upon {
     margin: 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .h2-read {
     line-height: 5px;
-    font-size: 1.25em;
+    font-size: .9em;
 }
 
 .h3-read {
-    line-height: 10px;
-    font-size: 1em;
+    line-height: 9.7px;
+    font-size: .7em;
 }
 
 .facts {
-    height: 350px;
+    height: 250px;
+    margin-top: 20px;
 }
 
 .facts-right {
-    font-size: 0.9em;
+    width: 80px;
 }
 
 #h3-once-upon {
-    font-size: 1em;
+    font-size: .6em;
 }
 
 .h3-once-upon {
-    gap: .5em;
+    gap: 0em;
 }
 
 .cover-read {
-    height: 350px;
+    height: 200px;
 }
 
 .p-read {
-    width: 250px;
+    width: 140px;
+    font-size: .8em;
+}
+
+.description-read {
+    margin-top: 10px;
+}
+
+.description-para {
+    margin-bottom: 0;
 }
 
 .movie-buy {
     padding: .3em;
+    width: 130px;
 }
 
 
@@ -1447,19 +1467,24 @@ font-size: 1.22em;
         /* -- MAIN -- */
 
 .container-cong {
-    height: 550px;
+    height: 500px;
+    width: 140px;
+    margin: auto;
 }
 
 .h1-cong {
-    font-size: 1.7em;
+    font-size: 1em;
 }
 
 .h2-cong {
     font-size: 1em;
+    width: 120px;
+    text-align: center;
+    margin: 0;
 }
 
 .cover-cong {
-    height: 350px;
+    height: 204px;
 }
 
 .play-button {
@@ -1467,8 +1492,23 @@ font-size: 1.22em;
 }
 
 .p-cong {
-    width: 240px;
+    width: 140px;
     line-height: 25px;
+}
+
+.icons-cong {
+    width: 130px;
+    margin: auto;
+}
+
+.icons-cong * {
+    padding: 5px;
+}
+
+        /* -- FOOTER -- */
+
+.footer {
+    padding-top: 0;
 }
 
 
@@ -1486,7 +1526,7 @@ font-size: 1.22em;
 
 .main-buy {
     position: relative;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1495,12 +1535,35 @@ font-size: 1.22em;
 }
 
 .container-buy {
+    width: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2em;
     margin-top: 40px;
+}
+
+.cover-buy {
+    height: 204px;
+}
+
+.container-price-buy {
+    width: 140px;
+}
+
+hr {
+    width: 140px;
+}
+
+.h1-buy {
+    font-size: 1.3em;
+    padding: 0;
+}
+
+.h2-buy {
+    font-size: 1.1em;
+    margin-top: 20px;
 }
 
 .price-buy-2 {
@@ -1512,28 +1575,33 @@ font-size: 1.22em;
 
 .fieldset {
     height: 400px;
+    margin: 0;
+    padding: 5px 0px 0px 0px;
 }
 
 #card-name,
 #card-num {
-    width: 200px;
+    width: 90px;
+    font-size: .9em;
 }
 
 .textbox-small {
     flex-wrap: wrap;
-    gap: 1em;
+    gap: .4em;
     justify-content: center;
 }
 
 #card-mmyy,
 #card-cvc {
-    width: 205px;
+    width: 95px;
+    font-size: .9em;
 }
 
 .pay-method {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 250px;
+    width: 140px;
 }
 
 .pay-logo {
@@ -1545,7 +1613,7 @@ transform: scale(.7);
 }
 
 .purchase {
-    width: 240px;
+    width: 140px;
 }
 
 }
