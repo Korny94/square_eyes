@@ -37,11 +37,13 @@
 a {
     color: rgb(237, 237, 237);
     text-decoration: none;
-    transition-duration: 350ms;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
 }
 
 img {
-    transition-duration: 350ms;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
 }
         
 
