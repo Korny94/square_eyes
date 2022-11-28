@@ -72,6 +72,14 @@ img {
     min-width: 2.3em;
 }
 
+.nav h1 {
+    display: none;
+}
+
+#three-bars h1 {
+    display: none;
+}
+
 #hamburger-menu,
 #three-bars {
     display: none;
