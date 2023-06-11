@@ -1,7 +1,5 @@
 # square_eyes
 
-# portfolio-karlMagnusNokling
-
 ![image](https://raw.githubusercontent.com/Korny94/square_eyes/main/images/squareEyes.png)
 
 ## Description
