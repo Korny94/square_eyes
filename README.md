@@ -26,7 +26,7 @@ Discover the joy of cinema and unlock a world of extraordinary storytelling with
 
 ## Built With
 
-- [Visual Studio Code](https://code.visualstudio.com/) (HTML5 & JavaScript)
+- [Visual Studio Code](https://code.visualstudio.com/) (HTML5 & CSS)
 
 ## Getting Started
 
